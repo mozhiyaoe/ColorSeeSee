@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.scene
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/StartUI.scene
+    path: Assets/Scenes/StartSence.scene
     guid: 660027f2b35e91347a71dfd3e5df4abc
   - enabled: 1
     path: Assets/Scenes/FirstModel.scene
