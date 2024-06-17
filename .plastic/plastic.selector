@@ -1,0 +1,4 @@
+repository "ColorSeeSee@a770e9cc-da8d-485f-8909-e204c803e73f@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
