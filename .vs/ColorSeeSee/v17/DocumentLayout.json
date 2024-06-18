@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\item\\game item\\ColorSeeSee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\startscenecontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller\\backgroundcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller\\backgroundcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|E:\\item\\game item\\ColorSeeSee\\assets\\script\\startscenecontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\startscenecontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|E:\\item\\game item\\ColorSeeSee\\assets\\script\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BackgroundContorller.cs",
+              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
+              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
+              "RelativeToolTip": "Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:41:41.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StartSceneContorller.cs",
               "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\StartSceneContorller.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\StartSceneContorller.cs",
               "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\StartSceneContorller.cs",
               "RelativeToolTip": "Assets\\Script\\StartSceneContorller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T06:23:29.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FirstModelContorller.cs",
-              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\FirstModelContorller.cs",
-              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller.cs",
-              "RelativeToolTip": "Assets\\Script\\FirstModelContorller.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T06:21:13.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Test.cs",
-              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\Test.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Test.cs",
-              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\Test.cs",
-              "RelativeToolTip": "Assets\\Script\\Test.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T06:20:43.737Z"
+              "WhenOpened": "2024-06-18T09:36:01.787Z"
             }
           ]
         }
