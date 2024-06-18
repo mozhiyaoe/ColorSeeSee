@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "E:\\item\\game item\\ColorSeeSee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\scene2buttoncontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scene2buttoncontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\startscenecontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\startscenecontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\ButtonContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ButtonContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\UI\\ButtonContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\UI\\ButtonContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\UI\\StartUIContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\UI\\StartUIContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|E:\\item\\game item\\ColorSeeSee\\assets\\script\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,48 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Scene2ButtonContorller.cs",
-              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\Scene2ButtonContorller.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Scene2ButtonContorller.cs",
-              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\Scene2ButtonContorller.cs",
-              "RelativeToolTip": "Assets\\Script\\Scene2ButtonContorller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "StartSceneContorller.cs",
+              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\StartSceneContorller.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\StartSceneContorller.cs",
+              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\StartSceneContorller.cs",
+              "RelativeToolTip": "Assets\\Script\\StartSceneContorller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T13:51:38.037Z",
+              "WhenOpened": "2024-06-18T06:23:29.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ButtonContorller.cs",
-              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\ButtonContorller.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ButtonContorller.cs",
-              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\ButtonContorller.cs",
-              "RelativeToolTip": "Assets\\Script\\ButtonContorller.cs",
+              "Title": "FirstModelContorller.cs",
+              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FirstModelContorller.cs",
+              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller.cs",
+              "RelativeToolTip": "Assets\\Script\\FirstModelContorller.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T13:23:46.48Z"
+              "WhenOpened": "2024-06-18T06:21:13.583Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ButtonContorller.cs",
-              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\UI\\ButtonContorller.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\ButtonContorller.cs",
-              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\UI\\ButtonContorller.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\ButtonContorller.cs",
+              "Title": "Test.cs",
+              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\Test.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Test.cs",
+              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\Test.cs",
+              "RelativeToolTip": "Assets\\Script\\Test.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T11:41:17.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StartUIContorller.cs",
-              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\UI\\StartUIContorller.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\StartUIContorller.cs",
-              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\UI\\StartUIContorller.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\StartUIContorller.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T09:54:15.872Z"
+              "WhenOpened": "2024-06-18T06:20:43.737Z"
             }
           ]
         }
