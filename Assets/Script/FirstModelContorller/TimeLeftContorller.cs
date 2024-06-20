@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class TimeLeftContorller : MonoBehaviour
 {
     // Start is called before the first frame update
-    //µ¹¼ÆÊ±¿ªÊ¼Êý×Ö
+
     public float timeleft;
-    //ÎÄ±¾ÏÈÊÇµ¹¼ÆÊ±
+
     public Text CountdownText;
-    //ÊÇ·ñ¿ªÊ¼µ¹¼ÆÊ±
+
     private bool isCounting;
     void Start()
     {
-        //¿ªÊ¼µ¹¼ÆÊ±
+
         isCounting = true;
     }
 
@@ -22,19 +22,18 @@ public class TimeLeftContorller : MonoBehaviour
     void Update()
     {
 
-        //ÅÐ¶¨ÊÇ·ñ¿ªÊ¼µ¹¼ÆÊ±
-        if (isCounting)
-        {
-            timeleft -= Time.deltaTime;
-
-        }
-        //ÎÄ±¾µ¹¼ÆÊ±ÏÈÊÇÊý×Ö
         CountdownText.text = timeleft.ToString(format: "0.00");
-        //µ±µ¹¼ÆÊ±Ð¡ÓÚµÈÓÚ0Ê±£¬Í£Ö¹µ¹¼ÆÊ±
-        if (timeleft <= 0 && isCounting)
-        {
-            //Í£Ö¹µ¹¼ÆÊ±
-            isCounting = false;
-        }
+         //åˆ¤å®šæ˜¯å¦å¼€å§‹å€’è®¡æ—¶
+      if (isCounting)
+      {
+        timeleft -= Time.deltaTime;
+
+      }
+      //å½“å€’è®¡æ—¶å°äºŽç­‰äºŽ0æ—¶ï¼Œåœæ­¢å€’è®¡æ—¶
+      if (timeleft <= 0 && isCounting)
+      {
+        //åœæ­¢å€’è®¡æ—¶
+        isCounting = false;
+      }
     }
 }

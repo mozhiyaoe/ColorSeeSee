@@ -8,10 +8,10 @@ using System.Collections.Generic;
 using Random = System.Random;
 using Unity.VisualScripting;
 
-public class BackgroundContorller : MonoBehaviour
+public class BackgroundContorller : TimeLeftContorller
 {
   //倒计时开始数字
-  public float timeleft;
+ 
   //是否开始倒计时
   private bool isCounting;
 
@@ -41,6 +41,7 @@ public class BackgroundContorller : MonoBehaviour
   {
     Random ran = new Random();
     int n = ran.Next(arr.Length - 1);
+   
     return arr[n];
   }
 
@@ -50,29 +51,15 @@ public class BackgroundContorller : MonoBehaviour
     BackgroundColor = gameObject.GetComponent<SpriteRenderer>();
 
     BackgroundColor.color = BackgroundChange(BackGroundArry);
+  }
 
-
-    // Update is called once per frame
-    void Update()
+    private static void Update()
     {
-      //使用函数开始变换背景
+        
 
-      //判定是否开始倒计时
-      if (isCounting)
-      {
-        timeleft -= Time.deltaTime;
-
-      }
-      //当倒计时小于等于0时，停止倒计时
-      if (timeleft <= 0 && isCounting)
-      {
-        //停止倒计时
-        isCounting = false;
-      }
 
 
 
 
     }
-  }
 }
