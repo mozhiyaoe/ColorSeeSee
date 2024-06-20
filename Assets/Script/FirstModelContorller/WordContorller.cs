@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WordContorller : BackgroundContorller
+public class WordContorller : MonoBehaviour
 {
     public Text WordText;
     public static class Word1

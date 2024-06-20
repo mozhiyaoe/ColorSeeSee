@@ -1,27 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class ButtonContorller : MonoBehaviour
 
-{
-  public static Color32 BackGroundColor1 = new Color32(239, 52, 115, 255);
-  public static Color32 BackGroundColor2 = new Color32(251, 164, 20, 255);
-  public static Color32 BackGroundColor3 = new Color32(255, 153, 0, 255);
-  public static Color32 BackGroundColor4 = new Color32(189, 221, 34, 255);
-  public static Color32 BackGroundColor5 = new Color32(22, 97, 171, 255);
-  public static Color32 BackGroundColor6 = new Color32(59, 46, 126, 255);
-  public static Color32 BackGroundColor7 = new Color32(126, 22, 113, 255);
 
-    // Start is called before the first frame update
+{
+    public BackgroundContorller backgroundcontorller = new BackgroundContorller();
+    public WordContorller wordcontorller = new WordContorller();
+    public TimeLeftContorller tiemleftcontorller = new TimeLeftContorller();
+    public GameObject LeftButtonColor=GameObject.Find("LeftButton");
+
+    public void Leftbutton()
+    {
+        Debug.Log("这是左边的按钮");
+        //for (tiemleftcontorller.timeleft = 5;)
+        
+
+
+    }
+    public void RightButton()
+    {
+        Debug.Log("这是右边按钮");
+    }
     void Start()
     {
         
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
+
+
 }

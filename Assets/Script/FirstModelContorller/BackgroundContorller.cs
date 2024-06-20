@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using Random = System.Random;
 using Unity.VisualScripting;
 
-public class BackgroundContorller : TimeLeftContorller
+public class BackgroundContorller : MonoBehaviour
 {
   //倒计时开始数字
  
