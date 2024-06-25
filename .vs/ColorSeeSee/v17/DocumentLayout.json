@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\item\\game item\\ColorSeeSee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller\\leftbuttoncontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller\\leftbuttoncontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|E:\\item\\game item\\ColorSeeSee\\assets\\script\\firstmodelcontorller\\backgroundcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller\\backgroundcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller\\backgroundcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller\\backgroundcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller\\wordcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller\\wordcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|e:\\item\\game item\\colorseesee\\assets\\script\\firstmodelcontorller\\leftbuttoncontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40461CB-7C7E-52A0-E8B7-DD909A3E5100}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\firstmodelcontorller\\leftbuttoncontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LeftButtonContorller.cs",
               "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\LeftButtonContorller.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\FirstModelContorller\\LeftButtonContorller.cs",
               "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\LeftButtonContorller.cs",
               "RelativeToolTip": "Assets\\Script\\FirstModelContorller\\LeftButtonContorller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T09:14:24.482Z",
               "IsPinned": true,
@@ -37,12 +41,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WordContorller.cs",
+              "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\WordContorller.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\FirstModelContorller\\WordContorller.cs",
+              "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\WordContorller.cs",
+              "RelativeToolTip": "Assets\\Script\\FirstModelContorller\\WordContorller.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwA0AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T13:02:42.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BackgroundContorller.cs",
               "DocumentMoniker": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
               "ToolTip": "E:\\item\\game item\\ColorSeeSee\\Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
               "RelativeToolTip": "Assets\\Script\\FirstModelContorller\\BackgroundContorller.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAcwD4AAAAZAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T06:00:42.811Z",
               "EditorCaption": ""

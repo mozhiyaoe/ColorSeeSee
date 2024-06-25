@@ -17,9 +17,10 @@ public class BackgroundContorller : MonoBehaviour
     //创建一个背景颜色变量
     [HideInInspector]
     public UnityEngine.UI.Image BackgroundImage;
-    
-   
 
+
+    public Image LeftButtonImage;
+   
 
 
 
@@ -60,8 +61,10 @@ public class BackgroundContorller : MonoBehaviour
   {
     BackgroundImage = gameObject.GetComponent<Image>();
 
-    BackgroundImage.color = BackgroundChange(BackGroundArry);
-        
+        LeftButtonImage.color =BackgroundImage.color = BackgroundChange(BackGroundArry);
+       
+
+
 
 
     }

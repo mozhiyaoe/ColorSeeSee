@@ -13,8 +13,7 @@ public class LeftButtonContorller : BackgroundContorller
     // Start is called before the first frame update
     void Start()
     {
-        LeftButtonImage = gameObject.GetComponent<UnityEngine.UI.Image>();
-        LeftButtonImage.color = BackgrounColor();
+        
     }
 
     // Update is called once per frame

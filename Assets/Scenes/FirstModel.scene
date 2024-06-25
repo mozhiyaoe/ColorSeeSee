@@ -312,6 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundImage: {fileID: 0}
+  LeftButtonImage: {fileID: 935271485}
   BackGroundArry:
   - serializedVersion: 2
     rgba: 4285740271
