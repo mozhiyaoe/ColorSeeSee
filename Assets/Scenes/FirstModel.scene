@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 222811202}
   - component: {fileID: 222811205}
   - component: {fileID: 222811204}
-  - component: {fileID: 222811206}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: Countdown
@@ -207,20 +206,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222811201}
   m_CullTransparentMesh: 1
---- !u!114 &222811206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222811201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b19c76c864f14b40afa64ba001a07c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeleft: 5
-  CountdownText: {fileID: 222811204}
 --- !u!1 &841898281
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +298,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackgroundImage: {fileID: 0}
   LeftButtonImage: {fileID: 935271485}
+  timeleft: 5
+  CountdownText: {fileID: 222811204}
+  WordText: {fileID: 843186489}
   BackGroundArry:
   - serializedVersion: 2
     rgba: 4285740271
@@ -850,7 +838,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1389823676
 GameObject:
@@ -933,38 +921,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389823676}
   m_CullTransparentMesh: 1
---- !u!1 &1781800649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 7
-  m_Component:
-  - component: {fileID: 1781800650}
-  m_Layer: 0
-  m_HasEditorInfo: 1
-  m_Name: BackGround
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1781800650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781800649}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 999.1577, y: 465.8419, z: 0}
-  m_LocalScale: {x: 228.3811, y: 97.68555, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799340661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1021,7 @@ RectTransform:
   - {fileID: 843186488}
   - {fileID: 935271483}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

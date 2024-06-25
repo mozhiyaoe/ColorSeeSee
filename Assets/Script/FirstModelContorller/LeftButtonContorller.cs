@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LeftButtonContorller : BackgroundContorller
+public class LeftButtonContorller : MonoBehaviour
+
 {
     public UnityEngine.UI.Image LeftButtonImage;
     public void Test()
