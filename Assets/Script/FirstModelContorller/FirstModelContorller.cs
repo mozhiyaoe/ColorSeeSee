@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using Random = System.Random;
 using Unity.VisualScripting;
 using System.Drawing;
+using System;
 
 public class FirstModelContoller : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class FirstModelContoller : MonoBehaviour
     public Image LeftButtonImage;
     //剩下的时间
     public float timeleft;
-     //倒数文字
+    //倒数文字
     public Text CountdownText;
     //是否开始倒数
     private bool isCounting;
@@ -31,77 +32,57 @@ public class FirstModelContoller : MonoBehaviour
     public Image RightButtonImage;
 
 
+    public Word word;
+    public static Color32 WordColor;
+    public static Color32 BanckgroundColor;
+
 
 
 
 
     //给背景附上颜色，并创建数组
-    public static Color32 BackGroundColor1 = new Color32(239, 52, 115, 255);
+    public static Color32 Color1 = new Color32(239, 52, 115, 255);
 
-    public static Color32 BackGroundColor2 = new Color32(251, 164, 20, 255);
-    public static Color32 BackGroundColor3 = new Color32(255, 153, 0, 255);
-    public static Color32 BackGroundColor4 = new Color32(189, 221, 34, 255);
-    public static Color32 BackGroundColor5 = new Color32(22, 97, 171, 255);
-    public static Color32 BackGroundColor6 = new Color32(59, 46, 126, 255);
-    public static Color32 BackGroundColor7 = new Color32(126, 22, 113, 255);
-    [HideInInspector]
-    public Color32[] BackGroundArry = new Color32[] { BackGroundColor1, BackGroundColor2, BackGroundColor3 ,BackGroundColor4,
-  BackGroundColor5,BackGroundColor6, BackGroundColor7};
+    public static Color32 Color2 = new Color32(251, 164, 20, 255);
+    public static Color32 Color3 = new Color32(255, 153, 0, 255);
+    public static Color32 Color4 = new Color32(189, 221, 34, 255);
+    public static Color32 Color5 = new Color32(22, 97, 171, 255);
+    public static Color32 Color6 = new Color32(59, 46, 126, 255);
+    public static Color32 Color7 = new Color32(126, 22, 113, 255);
+
     //给字附上颜色和文字属性
-
-    public static class Word1
+    public class Word
     {
-        public static string wordname = "红";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
-
-
+        public string Name { get; set; }
+        public UnityEngine.Color Color { get; set; }
+        public Word(string name, Color32 color)
+        {
+            Name = name;
+            Color = color;
+        }
     }
-    public static class Word2
-    {
-        public static string wordname = "橙";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
 
 
-    }
-    public static class Word3
-    {
-        public static string wordname = "黄";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
-
-
-    }
-    public static class Word4
-    {
-        public static string wordname = "绿";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
-
-
-    }
-    public static class Word5
-    {
-        public static string wordname = "青";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
-
-
-    }
-    public static class Word6
-    {
-        public static string wordname = "紫";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
-
-
-    }
-    public static class Word7
-    {
-        public static string wordname = "红";
-        public static Color32 wordcolor = new Color32(239, 52, 115, 255);
-
-
-    }
     //创建文字数组
-    string[] WordName = { Word1.wordname, Word2.wordname, Word3.wordname, Word4.wordname, Word5.wordname, Word6.wordname, Word7.wordname };
+    public static Word Word1 = new Word("红", Color1);
+    public static Word Word2 = new Word("橙", Color2);
+    public static Word Word3 = new Word("黄", Color3);
+    public static Word Word4 = new Word("绿", Color4);
+    public static Word Word5 = new Word("青", Color5);
+    public static Word Word6 = new Word("蓝", Color6);
+    public static Word Word7 = new Word("紫", Color7);
+
+    [HideInInspector]
+    public Color32[] BackGroundArry = new Color32[] { Color1, Color2, Color3 ,Color4,
+  Color5,Color6, Color7};
+    public Word[] WordArry = new Word[] { Word1, Word2, Word3, Word4, Word5, Word6, Word7 };
+
+
+
+    LeftButtonContorller leftButtonContorller = new LeftButtonContorller();
+
     //文字随机取
-    public string WordnameChange(string[] arry)
+    public Word WordnameChange(Word[] arry)
     {
         System.Random ran = new System.Random();
         int n = ran.Next(arry.Length - 1);
@@ -112,15 +93,25 @@ public class FirstModelContoller : MonoBehaviour
     //背景颜色随机取
     public Color32 BackgroundChange(Color32[] arr)
     {
-        Random ran = new Random();
+        System.Random ran = new System.Random();
         int n = ran.Next(arr.Length - 1);
-
         return arr[n];
     }
-
-    public Color32 BackgrounColor()
+    public void LeftButtonColor()
     {
-        return BackgroundImage.color;
+        Random ran = new Random();
+        int n = ran.Next(1, 2);
+
+        if (n == 1)
+        {
+            LeftButtonImage.color = WordColor;
+        }
+        else
+        {
+            LeftButtonImage.color = BanckgroundColor;
+        }
+
+
     }
 
 
@@ -128,15 +119,19 @@ public class FirstModelContoller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         BackgroundImage = gameObject.GetComponent<Image>();
 
-         BackgroundImage.color = BackgroundChange(BackGroundArry);
+        BackgroundImage.color = BackgroundChange(BackGroundArry);
+        BanckgroundColor = BackgroundImage.color;
+
         isCounting = true;
-        WordText.text = WordnameChange(WordName);
-        if (isCounting) 
-        {
-          
-        }
+        word = WordnameChange(WordArry);
+
+        WordText.text = word.Name;
+        WordColor = word.Color;
+    
+        LeftButtonColor();
 
 
 
@@ -163,5 +158,7 @@ public class FirstModelContoller : MonoBehaviour
         }
     }
 
-
 }
+
+
+
