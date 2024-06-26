@@ -13,18 +13,22 @@ public class FirstModelContoller : MonoBehaviour
 {
 
 
-    //创建一个背景颜色变量
+    //创建一个背景颜色图像
     [HideInInspector]
     public UnityEngine.UI.Image BackgroundImage;
 
-
+    //左按钮的图像
     public Image LeftButtonImage;
+    //剩下的时间
     public float timeleft;
-
+     //倒数文字
     public Text CountdownText;
-
+    //是否开始倒数
     private bool isCounting;
+    //文字
     public Text WordText;
+    //右按钮图像
+    public Image RightButtonImage;
 
 
 
@@ -126,8 +130,15 @@ public class FirstModelContoller : MonoBehaviour
     {
         BackgroundImage = gameObject.GetComponent<Image>();
 
-        LeftButtonImage.color = BackgroundImage.color = BackgroundChange(BackGroundArry);
+         BackgroundImage.color = BackgroundChange(BackGroundArry);
         isCounting = true;
+        WordText.text = WordnameChange(WordName);
+        if (isCounting) 
+        {
+          
+        }
+
+
 
 
 
