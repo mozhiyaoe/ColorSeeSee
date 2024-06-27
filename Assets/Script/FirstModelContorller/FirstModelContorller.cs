@@ -31,16 +31,18 @@ public class FirstModelContoller : MonoBehaviour
     //右按钮图像
     public Image RightButtonImage;
 
-
-    public Word word;
+    //创建一个word变量，接收随机的Word类型
+    public Word WordRandom;
+    //创建一个字表示颜色的变量，用来接收字体的颜色
     public static Color32 WordColor;
-    public static Color32 BanckgroundColor;
+    //创建一个背景颜色的变量，用来接收背景的颜色
+    public static Color32 BackgroundColor;
+
+    
 
 
 
-
-
-    //给背景附上颜色，并创建数组
+    //给颜色实例化
     public static Color32 Color1 = new Color32(239, 52, 115, 255);
 
     public static Color32 Color2 = new Color32(251, 164, 20, 255);
@@ -63,7 +65,7 @@ public class FirstModelContoller : MonoBehaviour
     }
 
 
-    //创建文字数组
+    //将字这个类给实例化
     public static Word Word1 = new Word("红", Color1);
     public static Word Word2 = new Word("橙", Color2);
     public static Word Word3 = new Word("黄", Color3);
@@ -71,17 +73,18 @@ public class FirstModelContoller : MonoBehaviour
     public static Word Word5 = new Word("青", Color5);
     public static Word Word6 = new Word("蓝", Color6);
     public static Word Word7 = new Word("紫", Color7);
-
+    //创建颜色数组
     [HideInInspector]
-    public Color32[] BackGroundArry = new Color32[] { Color1, Color2, Color3 ,Color4,
+    public Color32[] ColorArry = new Color32[] { Color1, Color2, Color3 ,Color4,
   Color5,Color6, Color7};
+    //创建字数组
     public Word[] WordArry = new Word[] { Word1, Word2, Word3, Word4, Word5, Word6, Word7 };
 
 
 
-    LeftButtonContorller leftButtonContorller = new LeftButtonContorller();
 
-    //文字随机取
+
+    //文字类随机取
     public Word WordnameChange(Word[] arry)
     {
         System.Random ran = new System.Random();
@@ -91,16 +94,17 @@ public class FirstModelContoller : MonoBehaviour
 
 
     //背景颜色随机取
-    public Color32 BackgroundChange(Color32[] arr)
+    public Color32 ColorChange(Color32[] arr)
     {
         System.Random ran = new System.Random();
         int n = ran.Next(arr.Length - 1);
         return arr[n];
     }
+    //创建一个左按钮取颜色的方法
     public void LeftButtonColor()
     {
         Random ran = new Random();
-        int n = ran.Next(1, 2);
+        int n = ran.Next(1, 3);
 
         if (n == 1)
         {
@@ -108,10 +112,22 @@ public class FirstModelContoller : MonoBehaviour
         }
         else
         {
-            LeftButtonImage.color = BanckgroundColor;
+            LeftButtonImage.color = BackgroundColor;
         }
 
 
+    }
+    //创建右按钮取颜色的方法
+    public void RightButtonColor()
+    {
+        if (LeftButtonImage.color == WordColor)
+        {
+            RightButtonImage.color = BackgroundColor;
+        }
+        else
+        {
+            RightButtonImage.color = WordColor;
+        }
     }
 
 
@@ -119,20 +135,24 @@ public class FirstModelContoller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //获取背景图片的组件
         BackgroundImage = gameObject.GetComponent<Image>();
-
-        BackgroundImage.color = BackgroundChange(BackGroundArry);
-        BanckgroundColor = BackgroundImage.color;
-
+        //使得背景图片颜色随机
+        BackgroundImage.color = ColorChange(ColorArry);
+        //用一个变量接受背景颜色，方便阅读
+        BackgroundColor = BackgroundImage.color;
+        //开始计时
         isCounting = true;
-        word = WordnameChange(WordArry);
-
-        WordText.text = word.Name;
-        WordColor = word.Color;
-    
+        //随机取，并用WordRandom接收随机取的字类
+        WordRandom = WordnameChange(WordArry);
+        //使得界面的文字和随机取的Word类里面的文字一样
+        WordText.text = WordRandom.Name;
+        //将随机取的word类的颜色,赋值给wordcolor
+        WordColor = WordRandom.Color;
+        //左按钮颜色方法
         LeftButtonColor();
-
+        //实现右按钮颜色方法
+        RightButtonColor();
 
 
 
@@ -142,7 +162,7 @@ public class FirstModelContoller : MonoBehaviour
     }
     void Update()
     {
-
+        //更改数字格式
         CountdownText.text = timeleft.ToString(format: "0.00");
         //判定是否开始倒计时
         if (isCounting)
