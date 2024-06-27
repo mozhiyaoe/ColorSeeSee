@@ -38,7 +38,7 @@ public class FirstModelContoller : MonoBehaviour
     //创建一个背景颜色的变量，用来接收背景的颜色
     public static Color32 BackgroundColor;
 
-    
+
 
 
 
@@ -51,6 +51,7 @@ public class FirstModelContoller : MonoBehaviour
     public static Color32 Color5 = new Color32(22, 97, 171, 255);
     public static Color32 Color6 = new Color32(59, 46, 126, 255);
     public static Color32 Color7 = new Color32(126, 22, 113, 255);
+    public static Color32 Color8 = new Color32(0, 0, 0, 255);
 
     //给字附上颜色和文字属性
     public class Word
@@ -85,7 +86,7 @@ public class FirstModelContoller : MonoBehaviour
 
 
     //文字类随机取
-    public Word WordnameChange(Word[] arry)
+    public Word WordChange(Word[] arry)
     {
         System.Random ran = new System.Random();
         int n = ran.Next(arry.Length - 1);
@@ -128,13 +129,16 @@ public class FirstModelContoller : MonoBehaviour
         {
             RightButtonImage.color = WordColor;
         }
+
     }
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+
         //获取背景图片的组件
         BackgroundImage = gameObject.GetComponent<Image>();
         //使得背景图片颜色随机
@@ -144,7 +148,7 @@ public class FirstModelContoller : MonoBehaviour
         //开始计时
         isCounting = true;
         //随机取，并用WordRandom接收随机取的字类
-        WordRandom = WordnameChange(WordArry);
+        WordRandom = WordChange(WordArry);
         //使得界面的文字和随机取的Word类里面的文字一样
         WordText.text = WordRandom.Name;
         //将随机取的word类的颜色,赋值给wordcolor
@@ -153,7 +157,7 @@ public class FirstModelContoller : MonoBehaviour
         LeftButtonColor();
         //实现右按钮颜色方法
         RightButtonColor();
-
+        Debug.Log(" WordText.text");
 
 
 
@@ -176,9 +180,13 @@ public class FirstModelContoller : MonoBehaviour
             //停止倒计时
             isCounting = false;
         }
-    }
 
+
+    }
 }
+
+
+
 
 
 
