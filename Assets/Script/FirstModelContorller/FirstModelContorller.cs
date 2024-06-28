@@ -15,7 +15,7 @@ public class FirstModelContoller : MonoBehaviour
 
 
     //创建一个背景颜色图像
-    [HideInInspector]
+    
     public UnityEngine.UI.Image BackgroundImage;
 
     //左按钮的图像
@@ -139,8 +139,7 @@ public class FirstModelContoller : MonoBehaviour
     void Start()
     {
 
-        //获取背景图片的组件
-        BackgroundImage = gameObject.GetComponent<Image>();
+        
         //使得背景图片颜色随机
         BackgroundImage.color = ColorChange(ColorArry);
         //用一个变量接受背景颜色，方便阅读
