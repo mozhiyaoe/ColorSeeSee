@@ -138,15 +138,15 @@ public class FirstModelContoller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //开始计时
+        isCounting = true;
         //获取背景图片的组件
         BackgroundImage = gameObject.GetComponent<Image>();
         //使得背景图片颜色随机
         BackgroundImage.color = ColorChange(ColorArry);
         //用一个变量接受背景颜色，方便阅读
         BackgroundColor = BackgroundImage.color;
-        //开始计时
-        isCounting = true;
+      
         //随机取，并用WordRandom接收随机取的字类
         WordRandom = WordChange(WordArry);
         //使得界面的文字和随机取的Word类里面的文字一样
