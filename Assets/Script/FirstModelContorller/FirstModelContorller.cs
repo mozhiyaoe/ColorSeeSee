@@ -43,14 +43,14 @@ public class FirstModelContoller : MonoBehaviour
 
 
     //给颜色实例化
-    public static Color32 Color1 = new Color32(239, 52, 115, 255);
+    public static Color32 Color1 = new Color32(255, 0, 0, 255);
 
-    public static Color32 Color2 = new Color32(251, 164, 20, 255);
-    public static Color32 Color3 = new Color32(255, 153, 0, 255);
-    public static Color32 Color4 = new Color32(189, 221, 34, 255);
-    public static Color32 Color5 = new Color32(22, 97, 171, 255);
-    public static Color32 Color6 = new Color32(59, 46, 126, 255);
-    public static Color32 Color7 = new Color32(126, 22, 113, 255);
+    public static Color32 Color2 = new Color32(242, 253, 255 ,255);
+    public static Color32 Color3 = new Color32(255, 255, 0, 255);
+    public static Color32 Color4 = new Color32(0, 255, 0, 255);
+    public static Color32 Color5 = new Color32(0, 255, 255, 255);
+    public static Color32 Color6 = new Color32(0, 0, 128, 255);
+    public static Color32 Color7 = new Color32(128, 0, 128, 255);
     public static Color32 Color8 = new Color32(0, 0, 0, 255);
 
     //给字附上颜色和文字属性
@@ -68,7 +68,7 @@ public class FirstModelContoller : MonoBehaviour
 
     //将字这个类给实例化
     public static Word Word1 = new Word("红", Color1);
-    public static Word Word2 = new Word("橙", Color2);
+    public static Word Word2 = new Word("白", Color2);
     public static Word Word3 = new Word("黄", Color3);
     public static Word Word4 = new Word("绿", Color4);
     public static Word Word5 = new Word("青", Color5);
@@ -89,7 +89,7 @@ public class FirstModelContoller : MonoBehaviour
     public Word WordChange(Word[] arry)
     {
         System.Random ran = new System.Random();
-        int n = ran.Next(arry.Length - 1);
+        int n = ran.Next(0,7);
         return arry[n];
     }
 
@@ -98,7 +98,7 @@ public class FirstModelContoller : MonoBehaviour
     public Color32 ColorChange(Color32[] arr)
     {
         System.Random ran = new System.Random();
-        int n = ran.Next(arr.Length - 1);
+        int n = ran.Next(0,7);
         return arr[n];
     }
     //创建一个左按钮取颜色的方法
@@ -142,23 +142,10 @@ public class FirstModelContoller : MonoBehaviour
         isCounting = true;
         //获取背景图片的组件
         BackgroundImage = gameObject.GetComponent<Image>();
-        //使得背景图片颜色随机
-        BackgroundImage.color = ColorChange(ColorArry);
-        //用一个变量接受背景颜色，方便阅读
-        BackgroundColor = BackgroundImage.color;
-      
-        //随机取，并用WordRandom接收随机取的字类
-        WordRandom = WordChange(WordArry);
-        //使得界面的文字和随机取的Word类里面的文字一样
-        WordText.text = WordRandom.Name;
-        //将随机取的word类的颜色,赋值给wordcolor
-        WordColor = WordRandom.Color;
-        //左按钮颜色方法
-        LeftButtonColor();
-        //实现右按钮颜色方法
-        RightButtonColor();
-        
 
+
+
+       
 
 
 
@@ -182,6 +169,33 @@ public class FirstModelContoller : MonoBehaviour
         }
 
 
+        //使得背景图片颜色随机
+        BackgroundImage.color = ColorChange(ColorArry);
+        //随机取，并用WordRandom接收随机取的字类
+        WordRandom = WordChange(WordArry);
+
+
+        while (BackgroundImage.color == WordRandom.Color)
+        {
+            //使得背景图片颜色随机
+            BackgroundImage.color = ColorChange(ColorArry);
+            //随机取，并用WordRandom接收随机取的字类
+            WordRandom = WordChange(WordArry);
+        }
+        //用一个变量接受背景颜色，方便阅读
+        BackgroundColor = BackgroundImage.color;
+
+
+        //使得界面的文字和随机取的Word类里面的文字一样
+        WordText.text = WordRandom.Name;
+        //将随机取的word类的颜色,赋值给wordcolor
+        WordColor = WordRandom.Color;
+        //左按钮颜色方法
+        LeftButtonColor();
+        //实现右按钮颜色方法
+        RightButtonColor();
+
+       
     }
 }
 
