@@ -1,4 +1,3 @@
-
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,50 +9,48 @@ using Unity.VisualScripting;
 using System.Drawing;
 using System;
 
-public class FirstModelContoller : MonoBehaviour
+public class Controrller : MonoBehaviour
 {
-
-
-    //åˆ›å»ºä¸€ä¸ªèƒŒæ™¯é¢œè‰²å›¾åƒ
+    //´´½¨Ò»¸ö±³¾°ÑÕÉ«Í¼Ïñ
     [HideInInspector]
     public UnityEngine.UI.Image BackgroundImage;
 
-    //å·¦æŒ‰é’®çš„å›¾åƒ
+    //×ó°´Å¥µÄÍ¼Ïñ
     public Image LeftButtonImage;
-    //å‰©ä¸‹çš„æ—¶é—´
+    //Ê£ÏÂµÄÊ±¼ä
     public float timeleft;
-    //å€’æ•°æ–‡å­—
+    //µ¹ÊıÎÄ×Ö
     public Text CountdownText;
-    //æ˜¯å¦å¼€å§‹å€’æ•°
+    //ÊÇ·ñ¿ªÊ¼µ¹Êı
     private bool isCounting;
-    //æ–‡å­—
+    //ÎÄ×Ö
     public Text WordText;
-    //å³æŒ‰é’®å›¾åƒ
+    //ÓÒ°´Å¥Í¼Ïñ
     public Image RightButtonImage;
 
-    //åˆ›å»ºä¸€ä¸ªwordå˜é‡ï¼Œæ¥æ”¶éšæœºçš„Wordç±»å‹
+    //´´½¨Ò»¸öword±äÁ¿£¬½ÓÊÕËæ»úµÄWordÀàĞÍ
     public Word WordRandom;
-    //åˆ›å»ºä¸€ä¸ªå­—è¡¨ç¤ºé¢œè‰²çš„å˜é‡ï¼Œç”¨æ¥æ¥æ”¶å­—ä½“çš„é¢œè‰²
+    //´´½¨Ò»¸ö×Ö±íÊ¾ÑÕÉ«µÄ±äÁ¿£¬ÓÃÀ´½ÓÊÕ×ÖÌåµÄÑÕÉ«
     public static Color32 WordColor;
-    //åˆ›å»ºä¸€ä¸ªèƒŒæ™¯é¢œè‰²çš„å˜é‡ï¼Œç”¨æ¥æ¥æ”¶èƒŒæ™¯çš„é¢œè‰²
+    //´´½¨Ò»¸ö±³¾°ÑÕÉ«µÄ±äÁ¿£¬ÓÃÀ´½ÓÊÕ±³¾°µÄÑÕÉ«
     public static Color32 BackgroundColor;
 
 
 
 
 
-    //ç»™é¢œè‰²å®ä¾‹åŒ–
+    //¸øÑÕÉ«ÊµÀı»¯
     public static Color32 Color1 = new Color32(255, 0, 0, 255);
 
-    public static Color32 Color2 = new Color32(242, 253, 255 ,255);
+    public static Color32 Color2 = new Color32(242, 253, 255, 255);
     public static Color32 Color3 = new Color32(255, 255, 0, 255);
     public static Color32 Color4 = new Color32(0, 255, 0, 255);
     public static Color32 Color5 = new Color32(0, 255, 255, 255);
     public static Color32 Color6 = new Color32(0, 0, 128, 255);
     public static Color32 Color7 = new Color32(128, 0, 128, 255);
-    public static Color32 Color8 = new Color32(0, 0, 0, 255);
 
-    //ç»™å­—é™„ä¸Šé¢œè‰²å’Œæ–‡å­—å±æ€§
+
+    //¸ø×Ö¸½ÉÏÑÕÉ«ºÍÎÄ×ÖÊôĞÔ
     public class Word
     {
         public string Name { get; set; }
@@ -66,42 +63,42 @@ public class FirstModelContoller : MonoBehaviour
     }
 
 
-    //å°†å­—è¿™ä¸ªç±»ç»™å®ä¾‹åŒ–
-    public static Word Word1 = new Word("çº¢", Color1);
-    public static Word Word2 = new Word("ç™½", Color2);
-    public static Word Word3 = new Word("é»„", Color3);
-    public static Word Word4 = new Word("ç»¿", Color4);
-    public static Word Word5 = new Word("é’", Color5);
-    public static Word Word6 = new Word("è“", Color6);
-    public static Word Word7 = new Word("ç´«", Color7);
-    //åˆ›å»ºé¢œè‰²æ•°ç»„
+    //½«×ÖÕâ¸öÀà¸øÊµÀı»¯
+    public static Word Word1 = new Word("ºì", Color1);
+    public static Word Word2 = new Word("°×", Color2);
+    public static Word Word3 = new Word("»Æ", Color3);
+    public static Word Word4 = new Word("ÂÌ", Color4);
+    public static Word Word5 = new Word("Çà", Color5);
+    public static Word Word6 = new Word("À¶", Color6);
+    public static Word Word7 = new Word("×Ï", Color7);
+    //´´½¨ÑÕÉ«Êı×é
     [HideInInspector]
     public Color32[] ColorArry = new Color32[] { Color1, Color2, Color3 ,Color4,
   Color5,Color6, Color7};
-    //åˆ›å»ºå­—æ•°ç»„
+    //´´½¨×ÖÊı×é
     public Word[] WordArry = new Word[] { Word1, Word2, Word3, Word4, Word5, Word6, Word7 };
 
 
 
 
 
-    //æ–‡å­—ç±»éšæœºå–
+    //ÎÄ×ÖÀàËæ»úÈ¡
     public Word WordChange(Word[] arry)
     {
         System.Random ran = new System.Random();
-        int n = ran.Next(0,7);
+        int n = ran.Next(0, 7);
         return arry[n];
     }
 
 
-    //èƒŒæ™¯é¢œè‰²éšæœºå–
+    //±³¾°ÑÕÉ«Ëæ»úÈ¡
     public Color32 ColorChange(Color32[] arr)
     {
         System.Random ran = new System.Random();
-        int n = ran.Next(0,7);
+        int n = ran.Next(0, 7);
         return arr[n];
     }
-    //åˆ›å»ºä¸€ä¸ªå·¦æŒ‰é’®å–é¢œè‰²çš„æ–¹æ³•
+    //´´½¨Ò»¸ö×ó°´Å¥È¡ÑÕÉ«µÄ·½·¨
     public void LeftButtonColor()
     {
         Random ran = new Random();
@@ -118,7 +115,7 @@ public class FirstModelContoller : MonoBehaviour
 
 
     }
-    //åˆ›å»ºå³æŒ‰é’®å–é¢œè‰²çš„æ–¹æ³•
+    //´´½¨ÓÒ°´Å¥È¡ÑÕÉ«µÄ·½·¨
     public void RightButtonColor()
     {
         if (LeftButtonImage.color == WordColor)
@@ -138,14 +135,14 @@ public class FirstModelContoller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //å¼€å§‹è®¡æ—¶
+        //¿ªÊ¼¼ÆÊ±
         isCounting = true;
-        //è·å–èƒŒæ™¯å›¾ç‰‡çš„ç»„ä»¶
+        //»ñÈ¡±³¾°Í¼Æ¬µÄ×é¼ş
         BackgroundImage = gameObject.GetComponent<Image>();
 
 
 
-       
+
 
 
 
@@ -153,54 +150,48 @@ public class FirstModelContoller : MonoBehaviour
     }
     void Update()
     {
-        //æ›´æ”¹æ•°å­—æ ¼å¼
+        //¸ü¸ÄÊı×Ö¸ñÊ½
         CountdownText.text = timeleft.ToString(format: "0.00");
-        //åˆ¤å®šæ˜¯å¦å¼€å§‹å€’è®¡æ—¶
+        //ÅĞ¶¨ÊÇ·ñ¿ªÊ¼µ¹¼ÆÊ±
         if (isCounting)
         {
             timeleft -= Time.deltaTime;
 
         }
-        //å½“å€’è®¡æ—¶å°äºç­‰äº0æ—¶ï¼Œåœæ­¢å€’è®¡æ—¶
+        //µ±µ¹¼ÆÊ±Ğ¡ÓÚµÈÓÚ0Ê±£¬Í£Ö¹µ¹¼ÆÊ±
         if (timeleft <= 0 && isCounting)
         {
-            //åœæ­¢å€’è®¡æ—¶
+            //Í£Ö¹µ¹¼ÆÊ±
             isCounting = false;
         }
 
 
-        //ä½¿å¾—èƒŒæ™¯å›¾ç‰‡é¢œè‰²éšæœº
+        //Ê¹µÃ±³¾°Í¼Æ¬ÑÕÉ«Ëæ»ú
         BackgroundImage.color = ColorChange(ColorArry);
-        //éšæœºå–ï¼Œå¹¶ç”¨WordRandomæ¥æ”¶éšæœºå–çš„å­—ç±»
+        //Ëæ»úÈ¡£¬²¢ÓÃWordRandom½ÓÊÕËæ»úÈ¡µÄ×ÖÀà
         WordRandom = WordChange(WordArry);
 
 
         while (BackgroundImage.color == WordRandom.Color)
         {
-            //ä½¿å¾—èƒŒæ™¯å›¾ç‰‡é¢œè‰²éšæœº
+            //Ê¹µÃ±³¾°Í¼Æ¬ÑÕÉ«Ëæ»ú
             BackgroundImage.color = ColorChange(ColorArry);
-            //éšæœºå–ï¼Œå¹¶ç”¨WordRandomæ¥æ”¶éšæœºå–çš„å­—ç±»
+            //Ëæ»úÈ¡£¬²¢ÓÃWordRandom½ÓÊÕËæ»úÈ¡µÄ×ÖÀà
             WordRandom = WordChange(WordArry);
         }
-        //ç”¨ä¸€ä¸ªå˜é‡æ¥å—èƒŒæ™¯é¢œè‰²ï¼Œæ–¹ä¾¿é˜…è¯»
+        //ÓÃÒ»¸ö±äÁ¿½ÓÊÜ±³¾°ÑÕÉ«£¬·½±ãÔÄ¶Á
         BackgroundColor = BackgroundImage.color;
 
 
-        //ä½¿å¾—ç•Œé¢çš„æ–‡å­—å’Œéšæœºå–çš„Wordç±»é‡Œé¢çš„æ–‡å­—ä¸€æ ·
+        //Ê¹µÃ½çÃæµÄÎÄ×ÖºÍËæ»úÈ¡µÄWordÀàÀïÃæµÄÎÄ×ÖÒ»Ñù
         WordText.text = WordRandom.Name;
-        //å°†éšæœºå–çš„wordç±»çš„é¢œè‰²,èµ‹å€¼ç»™wordcolor
+        //½«Ëæ»úÈ¡µÄwordÀàµÄÑÕÉ«,¸³Öµ¸øwordcolor
         WordColor = WordRandom.Color;
-        //å·¦æŒ‰é’®é¢œè‰²æ–¹æ³•
+        //×ó°´Å¥ÑÕÉ«·½·¨
         LeftButtonColor();
-        //å®ç°å³æŒ‰é’®é¢œè‰²æ–¹æ³•
+        //ÊµÏÖÓÒ°´Å¥ÑÕÉ«·½·¨
         RightButtonColor();
 
-       
+
     }
 }
-
-
-
-
-
-

@@ -293,7 +293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 841898281}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c06072a5bebd49d4a83126d50a88c535, type: 3}
+  m_Script: {fileID: 11500000, guid: 81387156672e1914d9e60b2d87362976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundImage: {fileID: 0}
@@ -304,19 +304,19 @@ MonoBehaviour:
   RightButtonImage: {fileID: 1218752048}
   ColorArry:
   - serializedVersion: 2
-    rgba: 4285740271
+    rgba: 4278190335
   - serializedVersion: 2
-    rgba: 4279543035
+    rgba: 4294966770
   - serializedVersion: 2
-    rgba: 4278229503
+    rgba: 4278255615
   - serializedVersion: 2
-    rgba: 4280475069
+    rgba: 4278255360
   - serializedVersion: 2
-    rgba: 4289421590
+    rgba: 4294967040
   - serializedVersion: 2
-    rgba: 4286459451
+    rgba: 4286578688
   - serializedVersion: 2
-    rgba: 4285601406
+    rgba: 4286578816
 --- !u!1 &843186487
 GameObject:
   m_ObjectHideFlags: 0

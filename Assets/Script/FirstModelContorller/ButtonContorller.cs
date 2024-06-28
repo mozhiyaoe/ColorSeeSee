@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonContorller : FirstModelContoller
+public class ButtonContorller : MonoBehaviour
 
 {
     public void GameJudge()
