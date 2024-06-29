@@ -12,13 +12,14 @@ using System;
 public class Controrller : MonoBehaviour
 {
     //创建一个背景颜色图像
-    [HideInInspector]
-    public UnityEngine.UI.Image BackgroundImage;
+    
+    public Image BackgroundImage;
 
     //左按钮的图像
     public Image LeftButtonImage;
     //剩下的时间
-    public float timeleft;
+    
+    public float TimeLeft;
     //倒数文字
     public Text CountdownText;
     //是否开始倒数
@@ -128,57 +129,21 @@ public class Controrller : MonoBehaviour
         }
 
     }
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
+    public void Coloring()
     {
-        //开始计时
-        isCounting = true;
-        //获取背景图片的组件
-        BackgroundImage = gameObject.GetComponent<Image>();
-
-
-
-
-
-
-
-
-    }
-    void Update()
-    {
-        //更改数字格式
-        CountdownText.text = timeleft.ToString(format: "0.00");
-        //判定是否开始倒计时
-        if (isCounting)
-        {
-            timeleft -= Time.deltaTime;
-
-        }
-        //当倒计时小于等于0时，停止倒计时
-        if (timeleft <= 0 && isCounting)
-        {
-            //停止倒计时
-            isCounting = false;
-        }
-
-
         //使得背景图片颜色随机
         BackgroundImage.color = ColorChange(ColorArry);
         //随机取，并用WordRandom接收随机取的字类
         WordRandom = WordChange(WordArry);
 
 
-        while (BackgroundImage.color == WordRandom.Color)
-        {
-            //使得背景图片颜色随机
-            BackgroundImage.color = ColorChange(ColorArry);
-            //随机取，并用WordRandom接收随机取的字类
-            WordRandom = WordChange(WordArry);
-        }
+        //while (BackgroundImage.color == WordRandom.Color)
+        //{
+        //    //使得背景图片颜色随机
+        //    BackgroundImage.color = ColorChange(ColorArry);
+        //    //随机取，并用WordRandom接收随机取的字类
+        //    WordRandom = WordChange(WordArry);
+        //}
         //用一个变量接受背景颜色，方便阅读
         BackgroundColor = BackgroundImage.color;
 
@@ -191,6 +156,47 @@ public class Controrller : MonoBehaviour
         LeftButtonColor();
         //实现右按钮颜色方法
         RightButtonColor();
+
+    }
+
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //开始计时
+        isCounting = true;
+        
+      
+
+
+
+
+        Coloring();
+
+
+
+
+    }
+    void Update()
+    {
+        //更改数字格式
+        CountdownText.text = TimeLeft.ToString(format: "0.00");
+        //判定是否开始倒计时
+        if (isCounting)
+        {
+            TimeLeft -= Time.deltaTime;
+
+        }
+        //当倒计时小于等于0时，停止倒计时
+        if (TimeLeft <= 0 && isCounting)
+        {
+            //停止倒计时
+            isCounting = false;
+        }
+    
+
 
 
     }
