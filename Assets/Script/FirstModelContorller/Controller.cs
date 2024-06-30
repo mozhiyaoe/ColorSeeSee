@@ -23,7 +23,7 @@ public class Controller : MonoBehaviour
     public float TimeLeft;
 
     public Text CountdownText;
-    
+
 
     public Text WordText;
 
@@ -43,6 +43,9 @@ public class Controller : MonoBehaviour
     public bool RightButtonIsRight;
     [HideInInspector]
     public bool LeftButtonIsRight;
+
+    public Button LeftButton;
+    public Button RightButton;
 
 
     public static Color32 Color1 = new Color32(255, 0, 0, 255);
@@ -169,7 +172,7 @@ public class Controller : MonoBehaviour
 
         ButtonColoring();
 
-        
+
 
     }
     public void Right()
@@ -206,7 +209,7 @@ public class Controller : MonoBehaviour
 
     public void RightGameJudge()
     {
-     
+
 
 
         if (RightButtonIsRight == true)
@@ -237,18 +240,21 @@ public class Controller : MonoBehaviour
     }
     void Update()
     {
+        RightButton.onClick.AddListener(RightGameJudge);
+        LeftButton.onClick.AddListener(LeftGameJudge);
+
         CountdownText.text = TimeLeft.ToString(format: "0.00");
-     
+
 
         TimeLeft -= Time.deltaTime;
 
-        if (TimeLeft <= 0 )
+        if (TimeLeft <= 0)
         {
-            FaileText.gameObject.SetActive(false);
-            FalieImage.gameObject.SetActive(false);
-            Restart.gameObject.SetActive(false);
-            TimeLeft= 0;    
-            
+            FaileText.gameObject.SetActive(true);
+            FalieImage.gameObject.SetActive(true);
+            Restart.gameObject.SetActive(true);
+            TimeLeft = 0;
+
         }
         if (BackgroundImage.color == RightButtonImage.color)
         {
